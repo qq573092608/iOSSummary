@@ -13,6 +13,8 @@
 		67F57F4B21D7046A00534D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F57F4A21D7046A00534D31 /* Assets.xcassets */; };
 		67F57F4E21D7046A00534D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F57F4C21D7046A00534D31 /* LaunchScreen.storyboard */; };
 		67F57F5121D7046A00534D31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F57F5021D7046A00534D31 /* main.m */; };
+		67F57F5D21D711A600534D31 /* DTMediaPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F57F5C21D711A600534D31 /* DTMediaPlayManager.m */; };
+		67F57F6021D712D800534D31 /* DTMediaPlayControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F57F5F21D712D800534D31 /* DTMediaPlayControlView.m */; };
 		F7AC3FA9EDBF03EBEE41C731 /* Pods_ZFPlayerCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C2FA0630C7CB851F772810 /* Pods_ZFPlayerCase.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,10 @@
 		67F57F4D21D7046A00534D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67F57F4F21D7046A00534D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67F57F5021D7046A00534D31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67F57F5B21D711A600534D31 /* DTMediaPlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTMediaPlayManager.h; sourceTree = "<group>"; };
+		67F57F5C21D711A600534D31 /* DTMediaPlayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTMediaPlayManager.m; sourceTree = "<group>"; };
+		67F57F5E21D712D800534D31 /* DTMediaPlayControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTMediaPlayControlView.h; sourceTree = "<group>"; };
+		67F57F5F21D712D800534D31 /* DTMediaPlayControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTMediaPlayControlView.m; sourceTree = "<group>"; };
 		9BBEBB63DDB60CF8DDC6CB8E /* Pods-ZFPlayerCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFPlayerCase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFPlayerCase/Pods-ZFPlayerCase.debug.xcconfig"; sourceTree = "<group>"; };
 		C222CBFD47FF020ED42FD242 /* Pods-ZFPlayerCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFPlayerCase.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFPlayerCase/Pods-ZFPlayerCase.release.xcconfig"; sourceTree = "<group>"; };
 		F0C2FA0630C7CB851F772810 /* Pods_ZFPlayerCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZFPlayerCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +70,8 @@
 		67F57F3521D7046800534D31 = {
 			isa = PBXGroup;
 			children = (
+				67F57F5A21D7110C00534D31 /* ZFCustomMediaPlay */,
+				67F57F5921D710F400534D31 /* ZFCustomMediaControl */,
 				67F57F4021D7046800534D31 /* ZFPlayerCase */,
 				67F57F3F21D7046800534D31 /* Products */,
 				0F2B712AF71077E28FF32706 /* Pods */,
@@ -93,6 +101,24 @@
 				67F57F5021D7046A00534D31 /* main.m */,
 			);
 			path = ZFPlayerCase;
+			sourceTree = "<group>";
+		};
+		67F57F5921D710F400534D31 /* ZFCustomMediaControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZFCustomMediaControl;
+			sourceTree = "<group>";
+		};
+		67F57F5A21D7110C00534D31 /* ZFCustomMediaPlay */ = {
+			isa = PBXGroup;
+			children = (
+				67F57F5B21D711A600534D31 /* DTMediaPlayManager.h */,
+				67F57F5C21D711A600534D31 /* DTMediaPlayManager.m */,
+				67F57F5E21D712D800534D31 /* DTMediaPlayControlView.h */,
+				67F57F5F21D712D800534D31 /* DTMediaPlayControlView.m */,
+			);
+			path = ZFCustomMediaPlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F57F5D21D711A600534D31 /* DTMediaPlayManager.m in Sources */,
 				67F57F4621D7046800534D31 /* ViewController.m in Sources */,
 				67F57F5121D7046A00534D31 /* main.m in Sources */,
+				67F57F6021D712D800534D31 /* DTMediaPlayControlView.m in Sources */,
 				67F57F4321D7046800534D31 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
