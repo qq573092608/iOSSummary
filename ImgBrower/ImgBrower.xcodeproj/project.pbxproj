@@ -17,6 +17,8 @@
 		674D8A1921F9CD500093DED5 /* DTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 674D8A1821F9CD4F0093DED5 /* DTBaseViewController.m */; };
 		674D8A1D21F9CE5A0093DED5 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 674D8A1C21F9CE5A0093DED5 /* UIColor+Extension.m */; };
 		674D8A2021F9CEA50093DED5 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 674D8A1E21F9CEA50093DED5 /* UILabel+Extension.m */; };
+		67E23BE221FDA514009BC9D8 /* TableZoomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E23BE121FDA514009BC9D8 /* TableZoomVC.m */; };
+		67E23BE621FDA7A5009BC9D8 /* ZoomFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E23BE521FDA7A5009BC9D8 /* ZoomFooterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		674D8A1C21F9CE5A0093DED5 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		674D8A1E21F9CEA50093DED5 /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
 		674D8A1F21F9CEA50093DED5 /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		67E23BE021FDA514009BC9D8 /* TableZoomVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableZoomVC.h; sourceTree = "<group>"; };
+		67E23BE121FDA514009BC9D8 /* TableZoomVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableZoomVC.m; sourceTree = "<group>"; };
+		67E23BE421FDA7A5009BC9D8 /* ZoomFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomFooterView.h; sourceTree = "<group>"; };
+		67E23BE521FDA7A5009BC9D8 /* ZoomFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomFooterView.m; sourceTree = "<group>"; };
 		9D95E71FE9B5020D416C8E95 /* Pods-ImgBrower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgBrower.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgBrower/Pods-ImgBrower.release.xcconfig"; sourceTree = "<group>"; };
 		B0B09ABE56F931FE99E5B4B9 /* Pods-ImgBrower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgBrower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgBrower/Pods-ImgBrower.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,7 @@
 		674D89FD21F9CD040093DED5 /* ImgBrower */ = {
 			isa = PBXGroup;
 			children = (
+				67E23BE321FDA782009BC9D8 /* ZoomTableView */,
 				674D8A1A21F9CDA70093DED5 /* Tools */,
 				674D8A1721F9CD4F0093DED5 /* DTBaseViewController.h */,
 				674D8A1821F9CD4F0093DED5 /* DTBaseViewController.m */,
@@ -108,6 +115,17 @@
 				674D8A1C21F9CE5A0093DED5 /* UIColor+Extension.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		67E23BE321FDA782009BC9D8 /* ZoomTableView */ = {
+			isa = PBXGroup;
+			children = (
+				67E23BE021FDA514009BC9D8 /* TableZoomVC.h */,
+				67E23BE121FDA514009BC9D8 /* TableZoomVC.m */,
+				67E23BE421FDA7A5009BC9D8 /* ZoomFooterView.h */,
+				67E23BE521FDA7A5009BC9D8 /* ZoomFooterView.m */,
+			);
+			path = ZoomTableView;
 			sourceTree = "<group>";
 		};
 		7FDB21C82D8A917D750383B2 /* Frameworks */ = {
@@ -229,7 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E23BE221FDA514009BC9D8 /* TableZoomVC.m in Sources */,
 				674D8A1921F9CD500093DED5 /* DTBaseViewController.m in Sources */,
+				67E23BE621FDA7A5009BC9D8 /* ZoomFooterView.m in Sources */,
 				674D8A1D21F9CE5A0093DED5 /* UIColor+Extension.m in Sources */,
 				674D8A2021F9CEA50093DED5 /* UILabel+Extension.m in Sources */,
 				674D8A1621F9CD180093DED5 /* DTLessonPlanViewController.m in Sources */,

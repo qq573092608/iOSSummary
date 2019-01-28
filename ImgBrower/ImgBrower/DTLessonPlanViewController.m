@@ -46,8 +46,6 @@
     self.imgBrowerPageControl.currentPage = 6;
     CGRect visible = CGRectMake(6 * kScreenWidth, 0, kScreenWidth, kScreenHeight);
     [self.imgBrowerScrollView scrollRectToVisible:visible animated:NO];
-    
- //   ADDNOTIFICATION(UIDeviceOrientationDidChangeNotification, deviceOrientationDidChange:)
 }
 
 
@@ -80,14 +78,7 @@
             UIImage *img = [UIImage imageWithData:imgData];
             dispatch_sync(dispatch_get_main_queue(), ^{
                 
-                float pointY = 0;
-                if (img.size.height > childScrollViewFrame.size.height ) {
-                    pointY = 0;
-                } else {
-                    pointY = (childScrollViewFrame.size.height - 64.0f - 44.0f - img.size.height) * 0.5;
-                }
-                
-                UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, pointY, childScrollViewFrame.size.width, img.size.height)];
+                UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, childScrollViewFrame.size.width, imgVscroll.frame.size.height)];
                 imgView.contentMode = UIViewContentModeScaleAspectFit;
                 imgView.userInteractionEnabled = YES;
                 imgView.tag = i + 1;
@@ -165,8 +156,6 @@
 
 -(void)handleDoubleTap:(UITapGestureRecognizer *)gestureRecognizer{
     
-    NSLog(@"gestureRecognizer....");
-    
     if (gestureRecognizer.numberOfTapsRequired == 2) {
         UIScrollView *tempScroll = (UIScrollView*)gestureRecognizer.view.superview;
         if(tempScroll.zoomScale == 1){
@@ -180,7 +169,6 @@
         }
     }
 }
-
 
 #pragma mark - 缩放大小获取方法
 -(CGRect)zoomRectForScale:(CGFloat)scale withCenter:(CGPoint)center{
